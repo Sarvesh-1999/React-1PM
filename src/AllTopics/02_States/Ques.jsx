@@ -1,9 +1,10 @@
+import { useState } from "react";
+
 const Ques = () => {
-  let text = "Hii";
+  const [text, setText] = useState("Hii");
 
   const changeText = () => {
-    text = "Byeee";
-    console.log(text);
+    setText("Byeee");
   };
 
   return (
