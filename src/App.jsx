@@ -5,6 +5,8 @@ import Ques from "./AllTopics/02_States/Ques";
 import StatesInCBC from "./AllTopics/02_States/StatesInCBC";
 import StatesInFBC from "./AllTopics/02_States/StatesInFBC";
 import ToggleComponent from "./AllTopics/03_ConditionalRendering/ToggleComponent";
+import PropsParent from "./AllTopics/04_Props/PropsParent";
+import DrillingParent from "./AllTopics/05_PropsDrilling/DrillingParent";
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
       {/* <Ques /> */}
       {/* <Counter /> */}
       {/* <StatesInCBC /> */}
-      <ToggleComponent />
+      {/* <ToggleComponent /> */}
+      {/* <PropsParent /> */}
+      <DrillingParent />
     </div>
   );
 };
