@@ -7,6 +7,8 @@ import StatesInFBC from "./AllTopics/02_States/StatesInFBC";
 import ToggleComponent from "./AllTopics/03_ConditionalRendering/ToggleComponent";
 import PropsParent from "./AllTopics/04_Props/PropsParent";
 import DrillingParent from "./AllTopics/05_PropsDrilling/DrillingParent";
+import ContextExample from "./AllTopics/06_Context/ContextExample";
+import Parent from "./AllTopics/06_Context/Parent";
 
 const App = () => {
   return (
@@ -19,7 +21,12 @@ const App = () => {
       {/* <StatesInCBC /> */}
       {/* <ToggleComponent /> */}
       {/* <PropsParent /> */}
-      <DrillingParent />
+      {/* <DrillingParent /> */}
+
+      <ContextExample>
+        <Parent />
+      </ContextExample>
+
     </div>
   );
 };
