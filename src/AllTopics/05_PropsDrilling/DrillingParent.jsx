@@ -7,6 +7,7 @@ const DrillingParent = () => {
   let str = "Hello React";
   let arr = [10, 20, 30];
   let obj = { name: "Rahul " };
+  
   const getData = (value) => {
     alert(`GOT DATA ✅`);
     setData(value);

@@ -1,14 +1,12 @@
 import { useContext } from "react";
-import { ContextObject } from "./ContextExample";
+import { myStoreRoom } from "./ContextExample";
 const ChildB = () => {
-  let { str, arr, obj } = useContext(ContextObject);
+  let data = useContext(myStoreRoom);
+  console.log(data);
 
   return (
     <div>
       <h1>Child B</h1>
-      <h4>
-        {str} {arr} {obj.name}
-      </h4>
     </div>
   );
 };

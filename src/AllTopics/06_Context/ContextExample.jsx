@@ -1,19 +1,21 @@
 import { createContext } from "react";
+import Parent from "./Parent";
 
-export const ContextObject = createContext();
+// CONTEXT OBJECT
+export const myStoreRoom = createContext();
 
 const ContextExample = (props) => {
-  console.log(props); // { children : {} }
+  console.log(props);
 
   let str = "Hello";
   let arr = [10, 20, 30];
   let obj = { name: "John" };
-
   return (
-    <ContextObject.Provider value={{ str, arr, obj }}>
-      {props.children}
-    </ContextObject.Provider>
+    <div>
+      <myStoreRoom.Provider value={{ arr, str, obj }}>
+        {props.children}
+      </myStoreRoom.Provider>
+    </div>
   );
 };
-
 export default ContextExample;
