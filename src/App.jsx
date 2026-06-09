@@ -8,6 +8,7 @@ import ContextExample from "./AllTopics/06_Context/ContextExample";
 import Parent from "./AllTopics/06_Context/Parent";
 import UserLists from "./AllTopics/08_Lists/UserLists";
 import ProductsList from "./AllTopics/09_FetchApi/ProductsList";
+import ControlledForms1 from "./AllTopics/10_Forms/ControlledForms1";
 
 const App = () => {
   return (
@@ -22,7 +23,8 @@ const App = () => {
         <Parent />
       </ContextExample> */}
       {/* <UserLists /> */}
-      <ProductsList />
+      {/* <ProductsList /> */}
+      <ControlledForms1 />
     </div>
   );
 };
