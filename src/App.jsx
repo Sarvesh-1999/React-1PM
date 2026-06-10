@@ -9,22 +9,15 @@ import Parent from "./AllTopics/06_Context/Parent";
 import UserLists from "./AllTopics/08_Lists/UserLists";
 import ProductsList from "./AllTopics/09_FetchApi/ProductsList";
 import ControlledForms1 from "./AllTopics/10_Forms/ControlledForms1";
+import TodoApp from "./Task1/TodoApp";
+import { TodoContextProvider } from "./Task1/context/TodoContextProvider";
 
 const App = () => {
   return (
     <div>
-      {/* <FBC /> */}
-      {/* <CBC /> */}
-      {/* <StatesInFBC /> */}
-      {/* <Counter /> */}
-      {/* <ToggleComponent/> */}
-      {/* <DrillingParent/> */}
-      {/* <ContextExample>
-        <Parent />
-      </ContextExample> */}
-      {/* <UserLists /> */}
-      {/* <ProductsList /> */}
-      <ControlledForms1 />
+      <TodoContextProvider>
+        <TodoApp />
+      </TodoContextProvider>
     </div>
   );
 };
