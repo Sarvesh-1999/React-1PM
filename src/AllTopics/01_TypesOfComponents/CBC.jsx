@@ -11,3 +11,4 @@ class CBC extends Component {
 }
 
 export default CBC;
+

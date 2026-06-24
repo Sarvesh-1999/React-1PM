@@ -9,15 +9,18 @@ import Parent from "./AllTopics/06_Context/Parent";
 import UserLists from "./AllTopics/08_Lists/UserLists";
 import ProductsList from "./AllTopics/09_FetchApi/ProductsList";
 import ControlledForms1 from "./AllTopics/10_Forms/ControlledForms1";
+import ControlledForms2 from "./AllTopics/10_Forms/ControlledForms2";
 import TodoApp from "./Task1/TodoApp";
 import { TodoContextProvider } from "./Task1/context/TodoContextProvider";
 
 const App = () => {
   return (
     <div>
-      <TodoContextProvider>
+      {/* <TodoContextProvider>
         <TodoApp />
-      </TodoContextProvider>
+      </TodoContextProvider> */}
+
+      <ControlledForms2 />
     </div>
   );
 };

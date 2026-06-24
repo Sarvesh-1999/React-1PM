@@ -25,12 +25,12 @@ const ControlledForms1 = () => {
 
     console.log("Form Submitted");
     let formData = { username, email, password };
-    console.log(formData);
+    console.log(formData); // {username : "abc", password : "abc" , email : "abc"}
 
 
     // STORE DATA IN LOCAL STORAGE
     const savedUsers = JSON.parse(localStorage.getItem("users")) || []
-    savedUsers.push(formData) // [{},{}]
+    savedUsers.push(formData) // [{}]
     localStorage.setItem("users" , JSON.stringify(savedUsers))
 
 

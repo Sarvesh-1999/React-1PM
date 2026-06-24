@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const TodoContext = createContext();
 
 export const TodoContextProvider = (props) => {
-  
+
   const [todo, setTodo] = useState("");
   const [allTodos, setAllTodos] = useState(() => {
     const savedTodos = localStorage.getItem("todos");
@@ -20,11 +20,14 @@ export const TodoContextProvider = (props) => {
       const todos = [...allTodos];
       const updatedTodos = todos.map((ele) => {
         if (ele.id === editId) {
+          console.log({ ...ele, text: todo });
+          
           return { ...ele, text: todo };
         } else {
           return ele;
         }
       });
+
 
       setAllTodos(updatedTodos);
       localStorage.setItem("todos", JSON.stringify(updatedTodos));
