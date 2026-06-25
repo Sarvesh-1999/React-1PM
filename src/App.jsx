@@ -10,6 +10,7 @@ import UserLists from "./AllTopics/08_Lists/UserLists";
 import ProductsList from "./AllTopics/09_FetchApi/ProductsList";
 import ControlledForms1 from "./AllTopics/10_Forms/ControlledForms1";
 import ControlledForms2 from "./AllTopics/10_Forms/ControlledForms2";
+import Routing1 from "./AllTopics/11_Routing/Routing1";
 import TodoApp from "./Task1/TodoApp";
 import { TodoContextProvider } from "./Task1/context/TodoContextProvider";
 
@@ -20,7 +21,9 @@ const App = () => {
         <TodoApp />
       </TodoContextProvider> */}
 
-      <ControlledForms2 />
+      {/* <ControlledForms2 /> */}
+
+      <Routing1 />
     </div>
   );
 };
