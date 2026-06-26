@@ -1,29 +1,16 @@
-import CBC from "./AllTopics/01_TypesOfComponents/CBC";
-import FBC from "./AllTopics/01_TypesOfComponents/FBC";
-import Counter from "./AllTopics/02_States/Counter";
-import StatesInFBC from "./AllTopics/02_States/StatesInFBC";
-import ToggleComponent from "./AllTopics/03_ConditionalRendering/ToggleComponent";
-import DrillingParent from "./AllTopics/05_PropsDrilling/DrillingParent";
-import ContextExample from "./AllTopics/06_Context/ContextExample";
-import Parent from "./AllTopics/06_Context/Parent";
-import UserLists from "./AllTopics/08_Lists/UserLists";
-import ProductsList from "./AllTopics/09_FetchApi/ProductsList";
-import ControlledForms1 from "./AllTopics/10_Forms/ControlledForms1";
-import ControlledForms2 from "./AllTopics/10_Forms/ControlledForms2";
-import Routing1 from "./AllTopics/11_Routing/Routing1";
-import TodoApp from "./Task1/TodoApp";
-import { TodoContextProvider } from "./Task1/context/TodoContextProvider";
+import { useState } from "react";
+import LifeCycleInCBC from "./AllTopics/12_LifeCycle/LifeCycleInCBC";
 
 const App = () => {
+  
+  const [toggle, setToggle] = useState(false);
+  const handleToggle = () => setToggle((prev) => !prev);
+
   return (
     <div>
-      {/* <TodoContextProvider>
-        <TodoApp />
-      </TodoContextProvider> */}
+      <button onClick={handleToggle}>toggle me</button>
 
-      {/* <ControlledForms2 /> */}
-
-      <Routing1 />
+      {toggle && <LifeCycleInCBC />}
     </div>
   );
 };
