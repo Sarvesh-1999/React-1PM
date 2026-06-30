@@ -1,15 +1,17 @@
-import React, { useEffect, useState , Fragment } from "react";
+import React, { useEffect, useState, Fragment } from "react";
 
 const FetchProducts = () => {
   const [products, setProducts] = useState([]);
   console.log(products);
 
   useEffect(() => {
-    const controller = new AbortController()
+    const controller = new AbortController();
 
     async function getProducts() {
       try {
-        let resp = await fetch("https://dummyjson.com/products" , {signal :controller.signal });
+        let resp = await fetch("https://dummyjson.com/products", {
+          signal: controller.signal,
+        });
         let data = await resp.json();
         // console.log(data.products); // [{},{},.....]
         setProducts(data.products);
@@ -20,10 +22,8 @@ const FetchProducts = () => {
     getProducts();
 
     return () => {
-        controller.abort("component unmounted API call cancelled")
-    }
-
-
+      controller.abort("component unmounted API call cancelled");
+    };
   }, []);
 
   return (
