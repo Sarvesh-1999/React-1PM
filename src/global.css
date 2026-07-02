@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+.container {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+}

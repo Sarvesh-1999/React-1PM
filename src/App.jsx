@@ -4,6 +4,7 @@ import LifeCycleInFBC from "./AllTopics/12_LifeCycle/LifeCycleInFBC";
 import FetchProducts from "./AllTopics/13_Fetch/FetchProducts";
 import Reducer from "./AllTopics/14_Reducer/Reducer";
 import Optimization from "./AllTopics/15_Optimization/Optimization";
+import CSSExample from "./AllTopics/16_ReactCSS/CSSExample";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -22,7 +23,9 @@ const App = () => {
 
       {/* <Reducer /> */}
 
-      <Optimization />
+      {/* <Optimization /> */}
+
+      <CSSExample />
     </>
   );
 };
