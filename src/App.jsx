@@ -5,6 +5,7 @@ import FetchProducts from "./AllTopics/13_Fetch/FetchProducts";
 import Reducer from "./AllTopics/14_Reducer/Reducer";
 import Optimization from "./AllTopics/15_Optimization/Optimization";
 import CSSExample from "./AllTopics/16_ReactCSS/CSSExample";
+import HocExample from "./AllTopics/17_HOC/HocExample";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -25,7 +26,9 @@ const App = () => {
 
       {/* <Optimization /> */}
 
-      <CSSExample />
+      {/* <CSSExample /> */}
+
+      <HocExample />
     </>
   );
 };
