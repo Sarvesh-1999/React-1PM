@@ -6,6 +6,7 @@ import Reducer from "./AllTopics/14_Reducer/Reducer";
 import Optimization from "./AllTopics/15_Optimization/Optimization";
 import CSSExample from "./AllTopics/16_ReactCSS/CSSExample";
 import HocExample from "./AllTopics/17_HOC/HocExample";
+import ReduxApp from "./AllTopics/18_ReduxApp/ReduxApp";
 
 const App = () => {
   const [toggle, setToggle] = useState(false);
@@ -28,7 +29,9 @@ const App = () => {
 
       {/* <CSSExample /> */}
 
-      <HocExample />
+      {/* <HocExample /> */}
+
+      <ReduxApp/>
     </>
   );
 };
