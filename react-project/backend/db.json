@@ -5,6 +5,12 @@
       "email": "sarvesh@gmail.com",
       "password": "123456",
       "id": "TKw_OTUXGzY"
+    },
+    {
+      "username": "John",
+      "email": "john@gmail.com",
+      "password": "12345",
+      "id": "-HTvcS7GxHE"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
