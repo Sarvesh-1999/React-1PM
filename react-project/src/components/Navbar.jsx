@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <header className="bg-zinc-800 text-zinc-100 flex items-center justify-between px-20 py-5">
-      <div className="text-2xl font-extrabold">CRUD-APP</div>
+      <Link to={"/"} className="text-2xl font-extrabold">CRUD-APP</Link>
 
       <nav className="flex gap-5 font-semibold">
         {token ? (

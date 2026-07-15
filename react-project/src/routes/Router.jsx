@@ -47,7 +47,7 @@ export const routes = createBrowserRouter([
         ),
       },
       {
-        path: "/edit",
+        path: "/edit/:id", // dynamic path
         element: (
           <ProtectedRoute>
             <EditEmployee />

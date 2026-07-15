@@ -15,15 +15,6 @@
   ],
   "employees": [
     {
-      "firstname": "John",
-      "lastname": "Doe",
-      "email": "john@gmail.com",
-      "age": "22",
-      "designation": "Frontend Developer Trainee",
-      "doj": "2026-07-13",
-      "id": "JSSETOWFz-4"
-    },
-    {
       "firstname": "Jane",
       "lastname": "Doe",
       "email": "jane@gmail.com",
@@ -31,6 +22,15 @@
       "designation": "Backend Developer",
       "doj": "2026-06-29",
       "id": "9FPYIu1EqW0"
+    },
+    {
+      "firstname": "Henry",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "ndjsz3Kw1Us"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
