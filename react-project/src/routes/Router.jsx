@@ -5,9 +5,9 @@ import AllEmployees from "../pages/AllEmployees";
 import CreateEmployee from "../pages/CreateEmployee";
 import EditEmployee from "../pages/EditEmployee";
 import NotFound from "../pages/NotFound";
-import SignupPage from "../pages/SignupPage"
-import LoginPage from "../pages/LoginPage"
-
+import SignupPage from "../pages/SignupPage";
+import LoginPage from "../pages/LoginPage";
+import ProtectedRoute from "./ProtectedRoute";
 
 export const routes = createBrowserRouter([
   {
@@ -16,7 +16,11 @@ export const routes = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <HomePage />,
+        element: (
+          <ProtectedRoute>
+            <HomePage />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/signup",
@@ -28,15 +32,27 @@ export const routes = createBrowserRouter([
       },
       {
         path: "/create",
-        element: <CreateEmployee />,
+        element: (
+          <ProtectedRoute>
+            <CreateEmployee />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/all",
-        element: <AllEmployees />,
+        element: (
+          <ProtectedRoute>
+            <AllEmployees />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "/edit",
-        element: <EditEmployee />,
+        element: (
+          <ProtectedRoute>
+            <EditEmployee />
+          </ProtectedRoute>
+        ),
       },
       {
         path: "*",
