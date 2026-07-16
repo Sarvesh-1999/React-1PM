@@ -31,6 +31,78 @@
       "designation": "SR. TESTER",
       "doj": "2026-07-22",
       "id": "ndjsz3Kw1Us"
+    },
+    {
+      "firstname": "Test1",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "1"
+    },
+    {
+      "firstname": "Test 2",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "2"
+    },
+    {
+      "firstname": "Test3",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "3"
+    },
+    {
+      "firstname": "Test 4",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "4"
+    },
+    {
+      "firstname": "Test 5",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "5"
+    },
+    {
+      "firstname": "Test 6",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "6"
+    },
+    {
+      "firstname": "Test 7",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "7"
+    },
+    {
+      "firstname": "Test 8",
+      "lastname": "Kent",
+      "email": "henry@gmail.com",
+      "age": "27",
+      "designation": "SR. TESTER",
+      "doj": "2026-07-22",
+      "id": "8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

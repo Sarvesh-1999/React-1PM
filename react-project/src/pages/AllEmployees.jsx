@@ -1,21 +1,26 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+const LIMIT = 5;
 
 const AllEmployees = () => {
-  const [employees, setEmployees] = useState([]);
+  const [employeesData, setEmployeesData] = useState(null);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     async function getAllEmployees(params) {
       try {
-        let resp = await axios.get("http://localhost:5000/employees");
-        setEmployees(resp.data);
+        let resp = await axios.get(
+          `http://localhost:5000/employees?_per_page=${LIMIT}&_page=${page}`,
+        );
+        console.log(resp.data);
+        setEmployeesData(resp.data);
       } catch (error) {
         console.log(error);
       }
     }
     getAllEmployees();
-  });
+  }, [page]);
 
   const handleDeleteEmployee = async (id) => {
     try {
@@ -45,13 +50,14 @@ const AllEmployees = () => {
         </thead>
 
         <tbody className="bg-zinc-50">
-          {employees.length === 0 ? (
+          {employeesData?.data.length === 0 ? (
             <tr>
               <td colSpan={8}>No Employees</td>
             </tr>
           ) : (
-            employees.map((emp) => {
-              let { id, firstname, lastname, age, doj, desgination, email } = emp;
+            employeesData?.data.map((emp) => {
+              let { id, firstname, lastname, age, doj, desgination, email } =
+                emp;
               return (
                 <tr key={id} className="hover:bg-zinc-200 cursor-pointer">
                   <td className="py-2 px-5 ">{id}</td>
@@ -62,7 +68,10 @@ const AllEmployees = () => {
                   <td className="py-2 px-5 ">{desgination}</td>
                   <td className="py-2 px-5 ">{doj}</td>
                   <td className="py-2 px-5 ">
-                    <Link to={`/edit/${id}`} className="shadow mx-4 border border-zinc-700 px-5 py-1 rounded cursor-pointer">
+                    <Link
+                      to={`/edit/${id}`}
+                      className="shadow mx-4 border border-zinc-700 px-5 py-1 rounded cursor-pointer"
+                    >
                       Edit
                     </Link>
                     <button
@@ -78,6 +87,28 @@ const AllEmployees = () => {
           )}
         </tbody>
       </table>
+
+      <div className="flex justify-around mt-10">
+        <button
+          className="border px-2"
+          onClick={() => setPage((prev) => prev - 1)}
+          disabled={employeesData?.prev ? false : true}
+        >
+          Prev
+        </button>
+
+        <p>
+          {page} of {employeesData?.pages}
+        </p>
+
+        <button
+          className="border px-2"
+          onClick={() => setPage((prev) => prev + 1)}
+          disabled={employeesData?.next ? false : true}
+        >
+          Next
+        </button>
+      </div>
     </article>
   );
 };

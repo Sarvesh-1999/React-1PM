@@ -31,7 +31,8 @@ const App = () => {
 
       {/* <HocExample /> */}
 
-      <ReduxApp/>
+      {/* <ReduxApp/> */}
+
     </>
   );
 };
